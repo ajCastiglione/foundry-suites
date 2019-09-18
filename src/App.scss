@@ -1,0 +1,36 @@
+/************************
+Variables
+************************/
+@import "scss/partials/variables";
+
+/************************
+Mobile Devices
+************************/
+@import "scss/base";
+
+@media screen and (min-width: 481px) {
+  @import "scss/481up";
+}
+
+/************************
+Laptops
+************************/
+
+@media screen and (min-width: 768px) {
+  @import "scss/768up";
+}
+
+@media screen and (min-width: 1030px) {
+  @import "scss/1030up";
+}
+
+/************************
+Desktop +
+************************/
+@media screen and (min-width: 1240px) {
+  @import "scss/1240up";
+}
+
+@media screen and (min-width: 1500px) {
+  @import "scss/1500up";
+}
