@@ -28,6 +28,7 @@ a {
   .menu {
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     .nav-item {
       a {
@@ -40,6 +41,26 @@ a {
           border-color: $black;
         }
       }
+    }
+  }
+}
+
+// Hero
+.hero {
+  .slider {
+    max-width: 100%;
+    img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+    }
+    .slick-next {
+      right: 15px;
+      z-index: 99;
+    }
+    .slick-prev {
+      left: 15px;
+      z-index: 99;
     }
   }
 }
