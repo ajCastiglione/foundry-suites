@@ -10,7 +10,7 @@ export default class Header extends Component {
           <div className="grid">
             <div className="logo-container">
               <img
-                src="https://urgohotels.com/wp-content/uploads/2016/11/logo_placeholder.jpg"
+                src="https://foundrysuites.s3.amazonaws.com/foundrylogo.png"
                 alt="logo"
                 className="logo"
               />
