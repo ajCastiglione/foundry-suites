@@ -1,10 +1,15 @@
 import React from "react";
 import "./App.css";
 
+// Libraries
+import { Route } from "react-router-dom";
+
 // Local components
 import Header from "./partials/Header";
 import Hero from "./partials/Hero";
 import Widget from "./partials/Widget";
+import Home from "./sections/Home";
+import Footer from "./partials/Footer";
 
 function App() {
   return (
@@ -12,8 +17,9 @@ function App() {
       <Header />
       <Hero />
       <div id="content">
-        <h2 className="sub-title">Reservations</h2>
         <Widget />
+        <Route exact path="/" component={Home} />
+        <Footer />
       </div>
     </main>
   );

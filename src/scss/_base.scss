@@ -2,6 +2,8 @@
 body {
   font-family: $font;
   box-sizing: border-box;
+  font-weight: 300;
+  word-wrap: break-word;
 }
 
 a {
@@ -9,10 +11,29 @@ a {
   color: $black;
 }
 
+img {
+  max-width: 100%;
+}
+
+.page-title {
+  font-size: 30px;
+  font-weight: 300;
+}
+
 .sub-title {
   text-align: center;
   margin: 1rem 0;
   font-weight: 300;
+}
+
+h3 {
+  font-weight: 300;
+}
+// Layout
+.wrap {
+  width: 90%;
+  max-width: 1500px;
+  margin: auto;
 }
 
 // Header section
@@ -90,7 +111,7 @@ a {
         padding-bottom: 5px;
       }
       input {
-        width: 95%;
+        width: 98%;
         padding: 5px;
         font-size: 16px;
         border-radius: 5px;
@@ -123,6 +144,121 @@ a {
       background-color: transparent;
       color: $black;
       cursor: pointer;
+    }
+  }
+}
+
+// Home
+.home {
+  .page-title {
+    text-align: center;
+    margin: 3rem 0 1rem;
+  }
+  .widget-text {
+    text-align: center;
+  }
+  .rooms {
+    background-color: $darkBg;
+    padding: 1rem;
+    margin-top: 2rem;
+    .sub-title {
+      font-size: 28px;
+    }
+    .btn {
+      text-transform: uppercase;
+      font-size: 15px;
+    }
+    .suites {
+      max-width: 1200px;
+      margin: 1rem auto 0;
+      .suite {
+        padding: 0.5rem 1rem;
+        img {
+          max-width: 100%;
+        }
+        .suite-title {
+          margin: 1rem 0;
+          font-size: 18px;
+          font-weight: 300;
+        }
+      }
+    }
+  }
+  .video {
+    text-align: center;
+    padding: 2rem;
+  }
+}
+
+// Recent posts partial
+.recent-posts {
+  background-color: $darkBg;
+  padding: 1rem;
+  .posts {
+    max-width: 1000px;
+    margin: auto;
+    .post {
+      padding: 0.5rem 1rem;
+      img {
+        height: auto;
+        width: 100%;
+        max-height: 200px;
+        object-fit: cover;
+      }
+      h3 {
+        text-align: center;
+      }
+    }
+  }
+}
+
+// Footer
+.footer {
+  text-align: center;
+  margin-top: 2rem;
+  padding: 1rem 1rem 2rem;
+  .top {
+    border-bottom: 4px solid $darkBg;
+    padding-bottom: 3rem;
+    .btn {
+      display: block;
+      background-color: $black;
+      color: $white;
+      padding: 5px 4rem;
+      border-radius: 5px;
+      border: 2px solid $black;
+      transition: all 0.3s ease-in-out;
+      text-transform: uppercase;
+      max-width: 300px;
+      margin: auto;
+      &:hover {
+        background-color: transparent;
+        color: $black;
+        border-color: $primary;
+      }
+    }
+  }
+  .bottom {
+    h3 {
+      font-size: 25px;
+      span {
+        position: relative;
+        &:after {
+          position: absolute;
+          content: "";
+          background-color: $black;
+          height: 2px;
+          width: 30px;
+          bottom: -10px;
+          left: 0;
+          right: 0;
+          margin: auto;
+        }
+      }
+    }
+    address {
+      font-style: normal;
+      margin-bottom: 1rem;
     }
   }
 }

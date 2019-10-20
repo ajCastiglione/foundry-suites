@@ -46,59 +46,62 @@ export default class Widget extends Component {
     let today = this.getToday();
 
     return (
-      <form
-        className="booking-widget"
-        action="https://us01.iqwebbook.com/FSBBUF735/Integration/Search"
-        method="POST"
-        name="SearchForm">
-        <div className="form-group">
-          <div className="field">
-            <label htmlFor="AD">Adults</label>
-            <input type="number" min="1" max="4" name="AD" required />
+      <React.Fragment>
+        <h2 className="sub-title">Reservations</h2>
+        <form
+          className="booking-widget"
+          action="https://us01.iqwebbook.com/FSBBUF735/Integration/Search"
+          method="POST"
+          name="SearchForm">
+          <div className="form-group">
+            <div className="field">
+              <label htmlFor="AD">Adults</label>
+              <input type="number" min="1" max="4" name="AD" required />
+            </div>
+            <div className="field">
+              <label htmlFor="CH">Children</label>
+              <input type="number" min="1" max="3" name="CH" required />
+            </div>
           </div>
-          <div className="field">
-            <label htmlFor="CH">Children</label>
-            <input type="number" min="1" max="3" name="CH" required />
+          <div className="form-group">
+            <div className="field">
+              <label htmlFor="check-in">Check-in Day</label>
+              <input
+                type="date"
+                min={today}
+                name="check-in"
+                onChange={this.handleChange}
+                required
+              />
+            </div>
+            <div className="field">
+              <label htmlFor="check-out">Check-out Day</label>
+              <input
+                type="date"
+                min={
+                  this.state["check-in"] !== "" ? this.state["check-in"] : today
+                }
+                name="check-out"
+                onChange={this.handleChange}
+                required
+              />
+            </div>
           </div>
-        </div>
-        <div className="form-group">
-          <div className="field">
-            <label htmlFor="check-in">Check-in Day</label>
-            <input
-              type="date"
-              min={today}
-              name="check-in"
-              onChange={this.handleChange}
-              required
-            />
-          </div>
-          <div className="field">
-            <label htmlFor="check-out">Check-out Day</label>
-            <input
-              type="date"
-              min={
-                this.state["check-in"] !== "" ? this.state["check-in"] : today
-              }
-              name="check-out"
-              onChange={this.handleChange}
-              required
-            />
-          </div>
-        </div>
-        <input type="hidden" value={this.state.CID} name="CID" />
-        <input type="hidden" value={this.state.CIM} name="CIM" />
-        <input type="hidden" value={this.state.CIY} name="CIY" />
-        <input type="hidden" value={this.state.COD} name="COD" />
-        <input type="hidden" value={this.state.COM} name="COM" />
-        <input type="hidden" value={this.state.COY} name="COY" />
-        <input type="hidden" name="UF1" />
-        <input type="hidden" name="UF2" />
-        <input type="hidden" name="LG" />
-        <input type="hidden" name="RMS" value="1" />
-        <button type="submit" className="submit">
-          Book Now
-        </button>
-      </form>
+          <input type="hidden" value={this.state.CID} name="CID" />
+          <input type="hidden" value={this.state.CIM} name="CIM" />
+          <input type="hidden" value={this.state.CIY} name="CIY" />
+          <input type="hidden" value={this.state.COD} name="COD" />
+          <input type="hidden" value={this.state.COM} name="COM" />
+          <input type="hidden" value={this.state.COY} name="COY" />
+          <input type="hidden" name="UF1" />
+          <input type="hidden" name="UF2" />
+          <input type="hidden" name="LG" />
+          <input type="hidden" name="RMS" value="1" />
+          <button type="submit" className="submit">
+            Book Now
+          </button>
+        </form>
+      </React.Fragment>
     );
   }
 }
