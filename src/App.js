@@ -12,6 +12,7 @@ function App() {
       <Header />
       <Hero />
       <div id="content">
+        <h2 className="sub-title">Reservations</h2>
         <Widget />
       </div>
     </main>
