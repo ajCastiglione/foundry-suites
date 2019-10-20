@@ -1,7 +1,18 @@
 // Global Section
+body {
+  font-family: $font;
+  box-sizing: border-box;
+}
+
 a {
   text-decoration: none;
   color: $black;
+}
+
+.sub-title {
+  text-align: center;
+  margin: 1rem 0;
+  font-weight: 300;
 }
 
 // Header section
@@ -9,7 +20,7 @@ a {
   .inner-header {
     max-width: 1500px;
     margin: auto;
-    padding: .5rem 0;
+    padding: 0.5rem 0;
   }
 
   .logo-container {
@@ -39,7 +50,7 @@ a {
         transition: all 0.3s ease-in-out;
         border: 2px solid transparent;
         &:hover {
-          border-color: $black;
+          border-bottom-color: $black;
         }
       }
     }
@@ -62,6 +73,56 @@ a {
     .slick-prev {
       left: 15px;
       z-index: 99;
+    }
+  }
+}
+
+// Widget
+.booking-widget {
+  max-width: 800px;
+  margin: auto;
+  padding: 0 1rem;
+  .form-group {
+    .field {
+      padding: 1rem 0.5rem;
+      label {
+        display: inline-block;
+        padding-bottom: 5px;
+      }
+      input {
+        width: 95%;
+        padding: 5px;
+        font-size: 16px;
+        border-radius: 5px;
+        border: 1px solid $black;
+        transition: all 0.3s ease-in-out;
+        &:focus,
+        &:active {
+          outline: none;
+          border-color: $primary;
+        }
+      }
+    }
+  }
+  .submit {
+    display: block;
+    color: $white;
+    background-color: $black;
+    border: 2px solid $black;
+    outline: none;
+    padding: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    border-radius: 5px;
+    margin-top: 1rem;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      background-color: transparent;
+      color: $black;
+      cursor: pointer;
     }
   }
 }

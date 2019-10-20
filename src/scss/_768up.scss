@@ -13,3 +13,16 @@
     }
   }
 }
+
+// Widget
+.booking-widget {
+  .form-group {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    .field {
+      width: 50%;
+      padding: 1rem 0.5rem;
+    }
+  }
+}
