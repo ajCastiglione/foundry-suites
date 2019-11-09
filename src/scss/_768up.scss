@@ -1,8 +1,20 @@
 // Header section
 .header {
+  margin-top: 0;
   .logo-container {
     justify-content: flex-start;
+    padding: 0 1rem;
   }
+}
+
+// Navigation
+.navigation {
+  display: flex;
+}
+
+.mobile-nav-toggle-container,
+.mobile-nav-container {
+  display: none;
 }
 
 // Hero

@@ -38,6 +38,7 @@ h3 {
 
 // Header section
 .header {
+  margin-top: 53px;
   .inner-header {
     max-width: 1500px;
     margin: auto;
@@ -58,6 +59,7 @@ h3 {
 
 // Nav
 .navigation {
+  display: none;
   .menu {
     list-style: none;
     display: flex;
@@ -76,6 +78,71 @@ h3 {
       }
     }
   }
+}
+
+.mobile-nav-toggle-container {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  left: 0;
+  background-color: $black;
+  color: $white;
+  z-index: 9999;
+  border-bottom: 2px solid $primary;
+  .mobile-nav-btn i {
+    float: left;
+    padding: 16px 20px;
+    margin-left: -10px;
+    position: relative;
+    z-index: 20;
+    line-height: 1em;
+    cursor: pointer;
+  }
+  .mobile-nav-websiteName h3 {
+    margin: 0;
+    padding: 10px 20px;
+    text-align: center;
+    text-transform: capitalize;
+  }
+}
+.mobile-nav-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  max-width: 290px;
+  z-index: 999;
+}
+.mobile-nav-inner {
+  background-color: $black;
+  position: relative;
+  left: -290px;
+  margin-top: 50px;
+  transition: all 0.3s ease-in-out;
+  height: 100%;
+  z-index: 999;
+  .menu {
+    padding: 0;
+  }
+  .nav-item {
+    display: block;
+    list-style: none;
+    a {
+      display: block;
+      color: $white;
+      text-transform: capitalize;
+      background-color: rgba(250, 170, 42, 0.5);
+      padding: 10px;
+      border-bottom: 2px solid $black;
+    }
+  }
+}
+
+.mobile-show {
+  left: 0;
 }
 
 // Hero
