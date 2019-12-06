@@ -22,21 +22,31 @@ export default class RecentPosts extends Component {
 
   displayPosts = () => {
     let { posts } = this.state;
-    let blog = posts.map((el, id) => (
-      <div className="post" key={id}>
-        <a
-          href={el.link}
-          className="link"
-          target="_blank"
-          rel="noopener noreferrer">
-          <img
-            src={el._embedded["wp:featuredmedia"][0].source_url}
-            alt={el._embedded["wp:featuredmedia"][0].title.rendered}
-          />
-          <h3 className="post-title">{el.title.rendered}</h3>
-        </a>
-      </div>
-    ));
+    let blog = posts.map((el, id) => {
+      const img = el._embedded["wp:featuredmedia"]
+        ? el._embedded["wp:featuredmedia"][0]
+        : el._embedded["wp:featuredmedia"];
+      return (
+        <div className="post" key={id}>
+          <a
+            href={el.link}
+            className="link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src={
+                img
+                  ? img.source_url
+                  : "https://classiceventsbuffalo.com/wp-content/themes/classic-events-catering/library/images/logo.png"
+              }
+              alt={img ? img.title.rendered : ""}
+            />
+            <h3 className="post-title">{el.title.rendered}</h3>
+          </a>
+        </div>
+      );
+    });
     return blog;
   };
 
