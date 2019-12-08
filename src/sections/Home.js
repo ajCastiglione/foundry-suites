@@ -1,31 +1,24 @@
 import React, { Component } from "react";
-
+import { Link } from "react-router-dom";
 // Local components
 import RecentPosts from "../partials/RecentPosts";
+import roomInformation from "../partials/Rooms.json";
 
 export default class Home extends Component {
   state = {
-    rooms: [
-      {
-        image: "http://placehold.jp/430x230.png",
-        title: "King Suite",
-        link: "/rooms/king"
-      },
-      {
-        image: "http://placehold.jp/430x230.png",
-        title: "Queen Suite",
-        link: "/rooms/queen"
-      }
-    ]
+    rooms: roomInformation
   };
+  componentDidMount() {
+    this.props.updateHeader();
+  }
   render() {
     let { rooms } = this.state;
     let suites = rooms.map((el, id) => (
       <div className="suite" key={id}>
-        <a href={el.link} className="link">
+        <Link to={el.link} className="link">
           <img src={el.image} alt={el.title} />
           <h2 className="suite-title">{el.title}</h2>
-        </a>
+        </Link>
       </div>
     ));
 
@@ -48,9 +41,9 @@ export default class Home extends Component {
         <section className="rooms">
           <h2 className="sub-title">Rooms</h2>
           <div className="text-center">
-            <a href="/rooms" className="btn">
+            <Link to="/rooms" className="btn">
               - view all -
-            </a>
+            </Link>
             <div className="suites grid-two">{suites}</div>
           </div>
         </section>
