@@ -45,3 +45,20 @@
     font-size: 35px;
   }
 }
+
+// Rooms
+.rooms {
+  .all-rooms {
+    flex-wrap: nowrap;
+  }
+}
+
+// Single - Room
+.single-room {
+  .amenities-content {
+    flex-wrap: nowrap;
+    .amenity-single {
+      width: 300px;
+    }
+  }
+}

@@ -39,6 +39,7 @@ h3 {
 // Header section
 .header {
   margin-top: 53px;
+  border-bottom: 1px solid $black;
   .inner-header {
     max-width: 1500px;
     margin: auto;
@@ -54,6 +55,9 @@ h3 {
   .logo {
     width: 100%;
     max-width: 250px;
+  }
+  &.home {
+    border-bottom: none;
   }
 }
 
@@ -108,13 +112,14 @@ h3 {
 .mobile-nav-container {
   position: fixed;
   top: 0;
-  left: 0;
+  left: -290px;
   right: 0;
   bottom: 0;
   height: 100%;
   width: 100%;
   max-width: 290px;
   z-index: 999;
+  transition: all 0.3s ease-in-out;
 }
 .mobile-nav-inner {
   background-color: $black;
@@ -257,6 +262,78 @@ h3 {
   }
 }
 
+// Rooms
+.rooms {
+  .content {
+    padding: 1rem;
+  }
+  .page-title {
+    text-align: center;
+    font-weight: bold;
+  }
+  .desc {
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+  }
+
+  .all-rooms {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: center;
+    .room {
+      max-width: 550px;
+      margin: 1rem;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+      padding-bottom: 8px;
+    }
+    .room-image {
+      max-height: 330px;
+      object-fit: cover;
+      width: 100%;
+    }
+    .room-btn {
+      display: inline-block;
+      border: 1px solid $primary;
+      padding: 8px 2rem;
+      transition: all 0.3s ease-in-out-;
+      &:hover {
+        background-color: lighten($primary, 20%);
+      }
+    }
+  }
+}
+
+// Rooms - single
+.single-room {
+  text-align: center;
+  .single-image {
+    max-height: 500px;
+    object-fit: cover;
+    width: 100%;
+  }
+  .single-title {
+    text-transform: capitalize;
+  }
+  .single-details {
+    text-align: left;
+  }
+  .amenities-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    .amenity-single {
+      padding: 0.5rem 0;
+      width: 100%;
+      margin: 1rem;
+      border: 2px solid $darkBg;
+    }
+  }
+}
+
 // Recent posts partial
 .recent-posts {
   background-color: $darkBg;
@@ -327,5 +404,8 @@ h3 {
       font-style: normal;
       margin-bottom: 1rem;
     }
+  }
+  .rooms & {
+    border-top: 4px solid $darkBg;
   }
 }
