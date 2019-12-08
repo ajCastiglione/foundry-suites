@@ -7,7 +7,11 @@ export default class Footer extends Component {
         <section className="top">
           <h2 className="sub-title">Reservations</h2>
           <div className="text-center">
-            <a href="https://us01.iqwebbook.com/FSBBUF735" className="btn">
+            <a
+              href="https://us01.iqwebbook.com/FSBBUF735"
+              className="btn"
+              target="_blank"
+              rel="noopener noreferrer">
               book now
             </a>
           </div>
