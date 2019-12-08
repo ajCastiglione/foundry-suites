@@ -87,12 +87,12 @@ export default class Widget extends Component {
               />
             </div>
           </div>
-          <input type="hidden" value={this.state.CID} name="CID" />
-          <input type="hidden" value={this.state.CIM} name="CIM" />
-          <input type="hidden" value={this.state.CIY} name="CIY" />
-          <input type="hidden" value={this.state.COD} name="COD" />
-          <input type="hidden" value={this.state.COM} name="COM" />
-          <input type="hidden" value={this.state.COY} name="COY" />
+          <input type="hidden" defaultValue={this.state.CID} name="CID" />
+          <input type="hidden" defaultValue={this.state.CIM} name="CIM" />
+          <input type="hidden" defaultValue={this.state.CIY} name="CIY" />
+          <input type="hidden" defaultValue={this.state.COD} name="COD" />
+          <input type="hidden" defaultValue={this.state.COM} name="COM" />
+          <input type="hidden" defaultValue={this.state.COY} name="COY" />
           <input type="hidden" name="UF1" />
           <input type="hidden" name="UF2" />
           <input type="hidden" name="LG" />
