@@ -42,17 +42,39 @@ export default class Widget extends Component {
     });
   };
 
+  beforeSubmit = e => {
+    e.preventDefault();
+    document.querySelector(".modal").classList.add("active");
+  };
+  policyClicked = e => {
+    document.querySelector(".modal").classList.remove("active");
+    document.querySelector(".before-submit").style.display = "none";
+    document.querySelector(".submit").style.display = "block";
+  };
+
   render() {
     let today = this.getToday();
 
     return (
-      <React.Fragment>
+      <section className="widget-section">
         <h2 className="sub-title">Reservations</h2>
+        <div className="modal">
+          <h2>Please read the PDF before booking.</h2>
+          <a
+            href="https://foundrysuites.s3.amazonaws.com/NewFoundrySuitesHotelRulesPolicies.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={this.policyClicked}
+          >
+            New Hotel Policy
+          </a>
+        </div>
         <form
           className="booking-widget"
           action="https://us01.iqwebbook.com/FSBBUF735/Integration/Search"
           method="POST"
-          name="SearchForm">
+          name="SearchForm"
+        >
           <div className="form-group">
             <div className="field">
               <label htmlFor="AD">Adults</label>
@@ -97,11 +119,18 @@ export default class Widget extends Component {
           <input type="hidden" name="UF2" />
           <input type="hidden" name="LG" />
           <input type="hidden" name="RMS" value="1" />
+          <button
+            type="submit"
+            className="before-submit"
+            onClick={this.beforeSubmit}
+          >
+            Book Now
+          </button>
           <button type="submit" className="submit">
             Book Now
           </button>
         </form>
-      </React.Fragment>
+      </section>
     );
   }
 }
