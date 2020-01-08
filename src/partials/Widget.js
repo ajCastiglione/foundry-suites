@@ -64,8 +64,7 @@ export default class Widget extends Component {
             href="https://foundrysuites.s3.amazonaws.com/NewFoundrySuitesHotelRulesPolicies.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            onClick={this.policyClicked}
-          >
+            onClick={this.policyClicked}>
             New Hotel Policy
           </a>
         </div>
@@ -73,8 +72,7 @@ export default class Widget extends Component {
           className="booking-widget"
           action="https://us01.iqwebbook.com/FSBBUF735/Integration/Search"
           method="POST"
-          name="SearchForm"
-        >
+          name="SearchForm">
           <div className="form-group">
             <div className="field">
               <label htmlFor="AD">Adults</label>
@@ -122,8 +120,7 @@ export default class Widget extends Component {
           <button
             type="submit"
             className="before-submit"
-            onClick={this.beforeSubmit}
-          >
+            onClick={this.beforeSubmit}>
             Book Now
           </button>
           <button type="submit" className="submit">
