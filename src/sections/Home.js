@@ -60,7 +60,7 @@ export default class Home extends Component {
                 online and offline, to safeguard our guests.
               </li>
             </ol>
-            <h2>Hotel Cotnact Information:</h2>
+            <h2>Hotel Contact Information:</h2>
             <p>Address: 1738 Elmwood Ave. Buffalo, NY 14207</p>
             <p>
               Phone: <a href="tel:716-240-9693">(716) 240-9693</a>
