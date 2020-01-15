@@ -4,7 +4,6 @@ import Slider from "react-slick";
 export default class Hero extends Component {
   state = {
     images: [
-      "https://foundrysuites.s3.amazonaws.com/IMG_5050.jpg",
       "https://foundrysuites.s3.amazonaws.com/IMG_5052.jpg",
       "https://foundrysuites.s3.amazonaws.com/IMG_5055.jpg"
     ]
