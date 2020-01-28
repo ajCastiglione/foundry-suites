@@ -14,12 +14,16 @@ export default class Home extends Component {
   render() {
     let { rooms } = this.state;
     let suites = rooms.map((el, id) => (
-      <div className="suite" key={id}>
-        <Link to={el.link} className="link">
-          <img src={el.image} alt={el.title} />
-          <h2 className="suite-title">{el.title}</h2>
-        </Link>
-      </div>
+      <React.Fragment>
+        {id > 1 ? null : (
+          <div className="suite" key={id}>
+            <Link to={el.link} className="link">
+              <img src={el.image} alt={el.title} />
+              <h2 className="suite-title">{el.title}</h2>
+            </Link>
+          </div>
+        )}
+      </React.Fragment>
     ));
 
     return (
