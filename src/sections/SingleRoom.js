@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
+import Lightbox from "simple-react-lightbox";
+import { SRLWrapper } from "simple-react-lightbox";
 
 import rooms from "../partials/Rooms.json";
 
@@ -60,6 +62,17 @@ export default class SingleRoom extends Component {
           <p className="single-details">{room.details}</p>
           <h2 className="amenities-title">Amenities</h2>
           <div className="amenities-content">{amens}</div>
+          <Lightbox>
+            <div className="gallery">
+              {this.state.slides.map((el, idx) => (
+                <SRLWrapper>
+                  <a href={el} data-attribute="SRL">
+                    <img src={el} alt="" key={idx} />
+                  </a>
+                </SRLWrapper>
+              ))}
+            </div>
+          </Lightbox>
         </div>
       </article>
     );

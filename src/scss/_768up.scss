@@ -61,4 +61,10 @@
       width: 300px;
     }
   }
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+    img {
+      max-height: 350px;
+    }
+  }
 }

@@ -1,0 +1,10 @@
+// Rooms - single
+.single-room {
+  // Gallery
+  .gallery {
+    grid-template-columns: 1fr 1fr;
+    img {
+      max-height: 150px;
+    }
+  }
+}
