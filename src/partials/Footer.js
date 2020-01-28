@@ -23,10 +23,8 @@ export default class Footer extends Component {
           <address>
             1738 Elmwood Ave <br /> Buffalo <br /> NY 14207
           </address>
-          <a
-            href="mailto:thefoundrysuites@classiceventsbuffalo.com"
-            className="link">
-            thefoundrysuites@classiceventsbuffalo.com
+          <a href="mailto:thefoundry@classiceventsbuffalo.com" className="link">
+            thefoundry@classiceventsbuffalo.com
           </a>
         </section>
       </article>
