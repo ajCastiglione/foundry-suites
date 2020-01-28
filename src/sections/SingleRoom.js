@@ -1,19 +1,29 @@
 import React, { Component } from "react";
+import Slider from "react-slick";
 
 import rooms from "../partials/Rooms.json";
 
 export default class SingleRoom extends Component {
   state = {
-    room: {}
+    room: {},
+    slides: []
   };
   componentDidMount() {
     let page = window.location.pathname;
     let room = rooms.filter(item => item.link === page);
-    this.setState({ room: room[0] });
+    this.setState({ room: room[0], slides: room[0].image });
   }
 
   render() {
     let room = this.state.room;
+    let settings = {
+      dots: false,
+      infinite: true,
+      arrows: true,
+      speed: 500,
+      slidesToShow: 1,
+      slidesToScroll: 1
+    };
     let amens = (
       <React.Fragment>
         <div className="amenity-single">
@@ -37,7 +47,15 @@ export default class SingleRoom extends Component {
       <article className="single-room">
         <h1 className="page-title">{room.title}</h1>
         <div className="single-content wrap">
-          <img className="single-image" src={room.image} alt={room.title} />
+          {this.state.slides ? (
+            <Slider {...settings} className="slider">
+              {this.state.slides.map((el, id) => (
+                <li key={id}>
+                  <img className="single-image" src={el} alt="room" />
+                </li>
+              ))}
+            </Slider>
+          ) : null}
           <h2 className="single-title">room details</h2>
           <p className="single-details">{room.details}</p>
           <h2 className="amenities-title">Amenities</h2>

@@ -2,7 +2,7 @@
   {
     "title": "King Suite",
     "link": "/rooms/king",
-    "image": "https://foundrysuites.s3.amazonaws.com/IMG_5050.jpg",
+    "image": ["https://foundrysuites.s3.amazonaws.com/IMG_5050.jpg"],
     "guestLimit": "4",
     "bedType": "1 King 1 Queen",
     "roomSize": "800 sq ft",
@@ -11,10 +11,160 @@
   {
     "title": "Queen Suite",
     "link": "/rooms/queen",
-    "image": "https://foundrysuites.s3.amazonaws.com/IMG_5052.jpg",
+    "image": ["https://foundrysuites.s3.amazonaws.com/IMG_5052.jpg"],
     "guestLimit": "4",
     "bedType": "1 King 1 Queen",
     "roomSize": "800 sq ft",
     "details": "The finest accommodations in our hotel, our Suites feature a separate living and sleeping area, with a handsome fireplace in a stylishly comfortable parlor and a private bedroom with a queen bed with 100% Italian cotton luxury linens and plush duvet style bedding. The Suite includes one Queen and one sofa bed. Three, flat-screen LED TV's including bathroom LED mirror television. Suite includes Bedroom, Parlor and Bath area with a whirlpool bath and multi-head shower. Suites offer from 600 to 800 square feet of space and working gas, remote control, original fireplaces. Breakfast, cocktails, WIFI, valet parking, chauffeur service and more - ALL inclusive with your guest room. AMENITIES 24 Hour Butler Service Complimentary Evening Cocktails Free High-Speed WiFi Complimentary Overnight Pressing Complimentary Valet Parking 2 HD Flat Panel Televisions 300 Cable Channel Lineup w/ On-Demand Temple Spa Bathroom Amenities Whirlpool Bath Hairdryer Regional & National Newspapers Wireless Telephone Desk & Workspace Fitness Studio Interconnected room(s) available Complimentary Land Rover Chauffeur Service Exclusive Boutique Bar Complimentary European Continental Breakfast Complimentary Overnight Shoeshine Complimentary Fine Coffee & Tea Bar Bathroom LED Mirror Television Gas Remote Controlled Original Fireplace Multi-Head Shower Frette Bathrobes In-Room Starbucks Coffee Wake-up service Garden or City View 24 Hour Business Services Billiards Table & Salon Separate Parlor & Bedroom"
+  },
+  {
+    "title": "Room 100",
+    "link": "/rooms/100",
+    "image": [
+      "https://foundrysuites.s3.amazonaws.com/100s/100e-min.jpg",
+      "https://foundrysuites.s3.amazonaws.com/100s/100d-min.jpg",
+      "https://foundrysuites.s3.amazonaws.com/100s/100c-min.jpg",
+      "https://foundrysuites.s3.amazonaws.com/100s/100b-min.jpg",
+      "https://foundrysuites.s3.amazonaws.com/100s/100a-min.jpg"
+    ],
+    "guestLimit": "4",
+    "bedType": "1 bed",
+    "roomSize": "800 sq ft",
+    "details": "This is dummy text. Please provide the text"
+  },
+  {
+    "title": "Room 101",
+    "link": "/rooms/101",
+    "image": [
+      "https://foundrysuites.s3.amazonaws.com/101s/101a-min.jpg",
+      "https://foundrysuites.s3.amazonaws.com/101s/101b-min.jpg",
+      "https://foundrysuites.s3.amazonaws.com/101s/101c-min.jpg",
+      "https://foundrysuites.s3.amazonaws.com/101s/101d-min.jpg",
+      "https://foundrysuites.s3.amazonaws.com/101s/101e-min.jpg"
+    ],
+    "guestLimit": "4",
+    "bedType": "1 bed",
+    "roomSize": "800 sq ft",
+    "details": "This is dummy text. Please provide the text"
+  },
+  {
+    "title": "Room 200",
+    "link": "/rooms/200",
+    "image": [
+      "https://foundrysuites.s3.amazonaws.com/200s/200a-min.jpg",
+      "https://foundrysuites.s3.amazonaws.com/200s/200b-min.jpg",
+      "https://foundrysuites.s3.amazonaws.com/200s/200c-min.jpg",
+      "https://foundrysuites.s3.amazonaws.com/200s/200d-min.jpg",
+      "https://foundrysuites.s3.amazonaws.com/200s/200e-min.jpg",
+      "https://foundrysuites.s3.amazonaws.com/200s/200f-min.jpg",
+      "https://foundrysuites.s3.amazonaws.com/200s/200g-min.jpg"
+    ],
+    "guestLimit": "4",
+    "bedType": "1 bed",
+    "roomSize": "800 sq ft",
+    "details": "This is dummy text. Please provide the text"
+  },
+  {
+    "title": "Room 201",
+    "link": "/rooms/201",
+    "image": [
+      "https://foundrysuites.s3.amazonaws.com/201s/201_bdrm_1-min.jpg",
+      "https://foundrysuites.s3.amazonaws.com/201s/201_bdrm_2-min.jpg",
+      "https://foundrysuites.s3.amazonaws.com/201s/201a-min.jpg",
+      "https://foundrysuites.s3.amazonaws.com/201s/201b-min.jpg",
+      "https://foundrysuites.s3.amazonaws.com/201s/201c-min.jpg",
+      "https://foundrysuites.s3.amazonaws.com/201s/201d-min.jpg"
+    ],
+    "guestLimit": "4",
+    "bedType": "1 bed",
+    "roomSize": "800 sq ft",
+    "details": "This is dummy text. Please provide the text"
+  },
+  {
+    "title": "Room 202",
+    "link": "/rooms/202",
+    "image": [
+      "https://foundrysuites.s3.amazonaws.com/202s/202a-min.jpg",
+      "https://foundrysuites.s3.amazonaws.com/202s/202b-min.jpg",
+      "https://foundrysuites.s3.amazonaws.com/202s/202c-min.jpg",
+      "https://foundrysuites.s3.amazonaws.com/202s/202d-min.jpg",
+      "https://foundrysuites.s3.amazonaws.com/202s/202e-min.jpg"
+    ],
+    "guestLimit": "4",
+    "bedType": "1 bed",
+    "roomSize": "800 sq ft",
+    "details": "This is dummy text. Please provide the text"
+  },
+  {
+    "title": "Room 203",
+    "link": "/rooms/203",
+    "image": [
+      "https://foundrysuites.s3.amazonaws.com/203s/203a-min.jpg",
+      "https://foundrysuites.s3.amazonaws.com/203s/203b-min.jpg"
+    ],
+    "guestLimit": "4",
+    "bedType": "1 bed",
+    "roomSize": "800 sq ft",
+    "details": "This is dummy text. Please provide the text"
+  },
+  {
+    "title": "Room 300",
+    "link": "/rooms/300",
+    "image": [
+      "https://foundrysuites.s3.amazonaws.com/300s/300a-min.jpg",
+      "https://foundrysuites.s3.amazonaws.com/300s/300b-min.jpg",
+      "https://foundrysuites.s3.amazonaws.com/300s/300c-min.jpg",
+      "https://foundrysuites.s3.amazonaws.com/300s/300d(1)-min.jpg",
+      "https://foundrysuites.s3.amazonaws.com/300s/300d-min.jpg",
+      "https://foundrysuites.s3.amazonaws.com/300s/300e-min.jpg"
+    ],
+    "guestLimit": "4",
+    "bedType": "1 bed",
+    "roomSize": "800 sq ft",
+    "details": "This is dummy text. Please provide the text"
+  },
+  {
+    "title": "Room 301",
+    "link": "/rooms/301",
+    "image": [
+      "https://foundrysuites.s3.amazonaws.com/301s/301a-min.jpg",
+      "https://foundrysuites.s3.amazonaws.com/301s/301b-min.jpg",
+      "https://foundrysuites.s3.amazonaws.com/301s/301c-min.jpg",
+      "https://foundrysuites.s3.amazonaws.com/301s/301d-min.jpg",
+      "https://foundrysuites.s3.amazonaws.com/301s/301e-min.jpg"
+    ],
+    "guestLimit": "4",
+    "bedType": "1 bed",
+    "roomSize": "800 sq ft",
+    "details": "This is dummy text. Please provide the text"
+  },
+  {
+    "title": "Room 302",
+    "link": "/rooms/302",
+    "image": [
+      "https://foundrysuites.s3.amazonaws.com/302s/302a-min.jpg",
+      "https://foundrysuites.s3.amazonaws.com/302s/302b-min.jpg",
+      "https://foundrysuites.s3.amazonaws.com/302s/302c-min.jpg",
+      "https://foundrysuites.s3.amazonaws.com/302s/302d-min.jpg",
+      "https://foundrysuites.s3.amazonaws.com/302s/302e-min.jpg",
+      "https://foundrysuites.s3.amazonaws.com/302s/302f-min.jpg",
+      "https://foundrysuites.s3.amazonaws.com/302s/302g-min.jpg"
+    ],
+    "guestLimit": "4",
+    "bedType": "1 bed",
+    "roomSize": "800 sq ft",
+    "details": "This is dummy text. Please provide the text"
+  },
+  {
+    "title": "Room 303",
+    "link": "/rooms/303",
+    "image": [
+      "https://foundrysuites.s3.amazonaws.com/303s/303a-min.jpg",
+      "https://foundrysuites.s3.amazonaws.com/303s/303b-min.jpg"
+    ],
+    "guestLimit": "4",
+    "bedType": "1 bed",
+    "roomSize": "800 sq ft",
+    "details": "This is dummy text. Please provide the text"
   }
 ]

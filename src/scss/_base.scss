@@ -331,10 +331,11 @@ h3 {
 
   .all-rooms {
     text-align: center;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: stretch;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    max-width: 1500px;
+    margin: auto;
     .room {
       max-width: 550px;
       margin: 1rem;
@@ -370,7 +371,7 @@ h3 {
     text-transform: capitalize;
   }
   .single-details {
-    text-align: left;
+    text-align: center;
   }
   .amenities-content {
     display: flex;
@@ -383,6 +384,15 @@ h3 {
       margin: 1rem;
       border: 2px solid $darkBg;
     }
+  }
+  // slider
+  .slick-prev {
+    left: 10px;
+    z-index: 9;
+  }
+  .slick-next {
+    right: 10px;
+    z-index: 9;
   }
 }
 

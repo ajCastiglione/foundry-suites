@@ -14,7 +14,7 @@ export default class Rooms extends Component {
   render() {
     let rooms = this.state.roomInfo.map((el, id) => (
       <div className="room" key={id}>
-        <img src={el.image} alt={el.title} className="room-image" />
+        <img src={el.image[0]} alt={el.title} className="room-image" />
         <h2 className="room-title">{el.title}</h2>
         <Link to={el.link} className="room-btn">
           More Info

@@ -49,7 +49,7 @@
 // Rooms
 .rooms {
   .all-rooms {
-    flex-wrap: nowrap;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
