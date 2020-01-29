@@ -91,7 +91,7 @@ h3 {
   left: 0;
   background-color: $black;
   color: $white;
-  z-index: 9999;
+  z-index: 999;
   border-bottom: 2px solid $primary;
   .mobile-nav-btn i {
     float: left;
@@ -118,7 +118,7 @@ h3 {
   height: 100%;
   width: 100%;
   max-width: 290px;
-  z-index: 999;
+  z-index: 998;
   transition: all 0.3s ease-in-out;
 }
 .mobile-nav-inner {
