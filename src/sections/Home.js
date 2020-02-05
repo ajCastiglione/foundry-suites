@@ -18,7 +18,7 @@ export default class Home extends Component {
         {id > 1 ? null : (
           <div className="suite" key={id}>
             <Link to={el.link} className="link">
-              <img src={el.image} alt={el.title} />
+              <img src={el.image[0]} alt={el.title} />
               <h2 className="suite-title">{el.title}</h2>
             </Link>
           </div>

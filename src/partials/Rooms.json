@@ -90,6 +90,38 @@
     "details": "This is dummy text. Please provide the text"
   },
   {
+    "title": "Room 204",
+    "link": "/rooms/204",
+    "image": [
+      "https://foundrysuites.s3.amazonaws.com/204s/204a.jpg",
+      "https://foundrysuites.s3.amazonaws.com/204s/204b.jpg",
+      "https://foundrysuites.s3.amazonaws.com/204s/204c.jpg",
+      "https://foundrysuites.s3.amazonaws.com/204s/204d.jpg",
+      "https://foundrysuites.s3.amazonaws.com/204s/204e.jpg"
+    ],
+    "guestLimit": "4",
+    "bedType": "1 bed",
+    "roomSize": "800 sq ft",
+    "details": "This is dummy text. Please provide the text"
+  },
+  {
+    "title": "Room 207",
+    "link": "/rooms/207",
+    "image": [
+      "https://foundrysuites.s3.amazonaws.com/207s/207a.jpg",
+      "https://foundrysuites.s3.amazonaws.com/207s/207b.jpg",
+      "https://foundrysuites.s3.amazonaws.com/207s/207c.jpg",
+      "https://foundrysuites.s3.amazonaws.com/207s/207d.jpg",
+      "https://foundrysuites.s3.amazonaws.com/207s/207e.jpg",
+      "https://foundrysuites.s3.amazonaws.com/207s/207f.jpg",
+      "https://foundrysuites.s3.amazonaws.com/207s/207g.jpg"
+    ],
+    "guestLimit": "4",
+    "bedType": "1 bed",
+    "roomSize": "800 sq ft",
+    "details": "This is dummy text. Please provide the text"
+  },
+  {
     "title": "Room 300",
     "link": "/rooms/300",
     "image": [

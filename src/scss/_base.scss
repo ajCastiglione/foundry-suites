@@ -292,7 +292,9 @@ h3 {
       .suite {
         padding: 0.5rem 1rem;
         img {
-          max-width: 100%;
+          width: 100%;
+          max-height: 400px;
+          object-fit: cover;
         }
         .suite-title {
           margin: 1rem 0;
