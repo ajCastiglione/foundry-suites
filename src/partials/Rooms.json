@@ -127,11 +127,9 @@
     "title": "Room 301",
     "link": "/rooms/301",
     "image": [
-      "https://foundrysuites.s3.amazonaws.com/301s/301a-min.jpg",
       "https://foundrysuites.s3.amazonaws.com/301s/301b-min.jpg",
       "https://foundrysuites.s3.amazonaws.com/301s/301c-min.jpg",
-      "https://foundrysuites.s3.amazonaws.com/301s/301d-min.jpg",
-      "https://foundrysuites.s3.amazonaws.com/301s/301e-min.jpg"
+      "https://foundrysuites.s3.amazonaws.com/301s/301d-min.jpg"
     ],
     "guestLimit": "4",
     "bedType": "1 bed",
@@ -144,11 +142,9 @@
     "image": [
       "https://foundrysuites.s3.amazonaws.com/302s/302a-min.jpg",
       "https://foundrysuites.s3.amazonaws.com/302s/302b-min.jpg",
-      "https://foundrysuites.s3.amazonaws.com/302s/302c-min.jpg",
       "https://foundrysuites.s3.amazonaws.com/302s/302d-min.jpg",
       "https://foundrysuites.s3.amazonaws.com/302s/302e-min.jpg",
-      "https://foundrysuites.s3.amazonaws.com/302s/302f-min.jpg",
-      "https://foundrysuites.s3.amazonaws.com/302s/302g-min.jpg"
+      "https://foundrysuites.s3.amazonaws.com/302s/302f-min.jpg"
     ],
     "guestLimit": "4",
     "bedType": "1 bed",
